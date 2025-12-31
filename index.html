@@ -71,6 +71,12 @@
         .animation-delay-2000 {
             animation-delay: 2s;
         }
+        /* Hyphenation for better justify on small screens */
+        .text-justify {
+            text-align: justify;
+            hyphens: auto;
+            word-spacing: -0.05em;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 overflow-x-hidden">
@@ -113,7 +119,7 @@
                     </span>
                     <span>New Chapter: Konsultan</span>
                 </div>
-                <h1 class="text-4xl md:text-6xl xl:text-7xl font-extrabold leading-tight mb-6">
+                <h1 class="text-4xl md:text-6xl xl:text-7xl font-extrabold leading-tight mb-6 tracking-tight">
                     Terima Kasih, <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-300">PMO OJK.</span>
                 </h1>
                 <p class="text-lg md:text-xl text-slate-300 mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0">
@@ -140,29 +146,31 @@
     <!-- Message Section -->
     <section id="message" class="py-24 sm:py-32 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto">
+            <div class="max-w-2xl mx-auto">
                 <div class="text-center mb-16">
                     <h2 class="text-base font-bold text-blue-600 uppercase tracking-widest mb-2">Pesan Perpisahan</h2>
-                    <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900">Sebuah Kehormatan Bisa Berkolaborasi.</h3>
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">Sebuah Kehormatan Bisa Berkolaborasi.</h3>
                 </div>
                 
-                <div class="space-y-6 text-slate-600 text-lg leading-relaxed">
+                <div class="space-y-6 text-slate-600 text-lg leading-relaxed text-justify">
                     <p>Rekan-rekan <strong>PMO OJK Workstream Sistem Informasi</strong> yang luar biasa,</p>
                     <p>Tidak terasa waktu saya di sini telah sampai pada titik terakhirnya. Bekerja bersama Anda semua dalam mengawal transformasi sistem informasi di Otoritas Jasa Keuangan adalah pengalaman yang sangat memperkaya diri.</p>
                     <p>Saya ingin menyampaikan apresiasi terdalam atas setiap diskusi, tantangan, dan kerja keras yang telah kita lalui bersama. Mulai sekarang, saya akan melanjutkan langkah saya sebagai seorang <strong>Konsultan</strong>.</p>
                     
-                    <div class="my-12 p-8 bg-slate-50 rounded-3xl border border-slate-100 relative">
-                        <svg class="absolute top-6 left-6 text-blue-100 h-12 w-12" fill="currentColor" viewBox="0 0 32 32"><path d="M10 8v8H6v-8h4zm12 8h-4v-8h4v8zm-12-10h-4a2 2 0 00-2 2v8a2 2 0 002 2h4v4h2v-4a2 2 0 002-2v-8a2 2 0 00-2-2zm12 0h-4a2 2 0 00-2 2v8a2 2 0 002 2h4v4h2v-4a2 2 0 002-2v-8a2 2 0 00-2-2z"/></svg>
-                        <p class="relative z-10 italic text-slate-700 font-medium">
+                    <div class="my-12 p-10 bg-slate-50 rounded-[2.5rem] border border-slate-100 relative overflow-hidden group">
+                        <div class="absolute -right-4 -bottom-4 text-blue-100/50 group-hover:scale-110 transition-transform duration-500">
+                             <svg class="h-32 w-32" fill="currentColor" viewBox="0 0 32 32"><path d="M10 8v8H6v-8h4zm12 8h-4v-8h4v8zm-12-10h-4a2 2 0 00-2 2v8a2 2 0 002 2h4v4h2v-4a2 2 0 002-2v-8a2 2 0 00-2-2zm12 0h-4a2 2 0 00-2 2v8a2 2 0 002 2h4v4h2v-4a2 2 0 002-2v-8a2 2 0 00-2-2z"/></svg>
+                        </div>
+                        <p class="relative z-10 italic text-slate-700 font-semibold text-xl leading-relaxed">
                             "Masa depan bukan tentang di mana kita berada, tapi ke mana kita menuju dengan pelajaran yang kita bawa."
                         </p>
                     </div>
                     
                     <p>Terima kasih atas segala memori indah. Sampai bertemu di lain kesempatan!</p>
                     
-                    <div class="pt-8 border-t border-slate-100">
-                        <p class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">Salam Hangat,</p>
-                        <p class="text-2xl font-extrabold text-slate-900">Naufal Nashif</p>
+                    <div class="pt-10 mt-10 border-t border-slate-100 flex flex-col items-center sm:items-start">
+                        <p class="text-xs font-bold text-blue-500 uppercase tracking-[0.2em] mb-3">Salam Hangat,</p>
+                        <p class="text-3xl font-extrabold text-slate-900 tracking-tighter">Naufal Nashif</p>
                     </div>
                 </div>
             </div>
@@ -175,7 +183,7 @@
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4 text-center md:text-left">
                 <div>
                     <h2 class="text-base font-bold text-blue-600 uppercase tracking-widest mb-2">Galeri Kenangan</h2>
-                    <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900">Momen yang Tak Terlupakan</h3>
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">Momen yang Tak Terlupakan</h3>
                 </div>
                 <p class="text-slate-500 max-w-md mx-auto md:mx-0">Dari Wisma Mulia hingga perjalanan ke Malang, setiap sudut menyimpan cerita.</p>
             </div>
@@ -257,9 +265,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <span class="text-3xl font-black tracking-tighter text-slate-200 mb-8 block uppercase">Naufal Nashif</span>
             <div class="flex justify-center space-x-8 mb-10 text-slate-400 font-bold uppercase tracking-widest text-xs">
-                <a href="https://www.linkedin.com/in/naufalnashif/" target="_blank" class="hover:text-blue-600">LinkedIn</a>
-                <a href="https://www.instagram.com/naufal.nashif/" target="_blank" class="hover:text-blue-600">Instagram</a>
-                <a href="https://naufalnashif.netlify.app/" target="_blank" class="hover:text-blue-600">Portfolio</a>
+                <a href="https://www.linkedin.com/in/naufalnashif/" target="_blank" class="hover:text-blue-600 transition-colors">LinkedIn</a>
+                <a href="https://www.instagram.com/naufal.nashif/" target="_blank" class="hover:text-blue-600 transition-colors">Instagram</a>
+                <a href="https://naufalnashif.netlify.app/" target="_blank" class="hover:text-blue-600 transition-colors">Portfolio</a>
             </div>
             <p class="text-slate-400 text-sm">&copy; 2025. Farewell Message.</p>
         </div>
